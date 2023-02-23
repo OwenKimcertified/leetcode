@@ -2,7 +2,7 @@ create function getNthHighestSalary(N int) returns int
 begin
 declare x int;
 set x = N-1;
-  RETURN (
+  return (
       select salary
       from employee
       group by salary
