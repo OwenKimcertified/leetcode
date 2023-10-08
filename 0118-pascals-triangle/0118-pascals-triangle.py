@@ -7,7 +7,7 @@ class Solution:
             
             
             for j in range(1, i):
-                self.curr_row.append(self.prev_row[j - 1] + self.prev_row[j])
+                self.curr_row.append(self.prev_row[j-1] + self.prev_row[j])
             
             self.curr_row.append(1)
             self.start.append(self.curr_row)
