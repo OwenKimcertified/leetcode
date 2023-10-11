@@ -2,6 +2,7 @@
 # 0, 1번인덱스는 0, 1 이고, 홀수, 짝수번 째에 규칙이 발생.
 # 2번 인덱스는 짝수의 규칙을 따르고 nums[1]
 # 3번 인덱스는 홀수의 규칙을 따르고 nums[1] + nums[2]
+# bottom - up 방식 tabulation
 
 class Solution:
     def getMaximumGenerated(self, n):
