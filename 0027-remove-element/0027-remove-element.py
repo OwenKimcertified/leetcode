@@ -8,9 +8,11 @@ class Solution(object):
         self.nums = nums
         self.val = val
         
-        count = 0
+        cnt = 0
+        
         for i in range(len(nums)):
             if nums[i] != val:
-                nums[count] = nums[i]
-                count += 1
-        return count
+                nums[cnt] = nums[i]
+                cnt += 1
+        
+        return cnt
