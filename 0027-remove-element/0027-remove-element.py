@@ -1,3 +1,4 @@
+# 순회
 class Solution(object):
     def removeElement(self, nums, val):
         """
@@ -10,9 +11,9 @@ class Solution(object):
         
         cnt = 0
         
-        for i in range(len(nums)):
-            if nums[i] != val:
-                nums[cnt] = nums[i]
+        for k in range(len(nums)):
+            if nums[k] != val:
+                nums[cnt] = nums[k]
                 cnt += 1
         
         return cnt
