@@ -14,7 +14,6 @@ from (select *,
 where 
 checker in (select is_consecutive
             from (select *,
-                  rank() over(order by id asc) as icmt,
                   (id - rank() over(order by id asc)) as is_consecutive
                   from stadium
                   where people >= 100) as sub_table2
