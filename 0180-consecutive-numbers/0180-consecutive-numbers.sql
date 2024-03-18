@@ -17,8 +17,7 @@ select distinct num as ConsecutiveNums
 
 from (select num,
       lead(num) over (order by id asc) prev_num,
-      lag(num) over (order by id asc) aft_num,
-      dense_rank() over(order by id asc) as checker
+      lag(num) over (order by id asc) aft_num
       from logs) as sub_table
       
 where num = prev_num and num = aft_num
