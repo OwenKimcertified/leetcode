@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 
-# select distinct(ConsecutiveNums)
+# select distinct ConsecutiveNums
 
 # from (select 
 #       id,
